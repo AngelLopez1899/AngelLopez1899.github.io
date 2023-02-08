@@ -1,6 +1,8 @@
 # AngelLopez.github.io
 ## Repositorio de la materia de Seguridad en Computo
 
-### Titulo 1
+### Accede rapidamente al sitio web
 
-#### Titulo 2
+#### [Click aqui](https://angellopez1899.github.io/)
+
+
