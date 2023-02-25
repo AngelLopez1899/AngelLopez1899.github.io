@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pagina Inicio</title>
+  <style>
+  </style>
+  <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.js"></script>
+</head>
+<body class="bg-dark text-white">
+	<nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark" data-bs-theme="dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="https://angellopez1899.github.io/">Inicio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="https://github.com/AngelLopez1899/AngelLopez1899.github.io">GitHub</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://youtu.be/5puRHQlgMC8">La mejor cancion del mundo</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Cascada
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Algo</a></li>
+            <li><a class="dropdown-item" href="#">Algo 2</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Algo 3</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled">Desactivado</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Busqueda" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Buscar</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<div class="container text-center">
+    <div class="row">
+    <h1>Bienvenido</h1>
+	<p>Tu correo electrónico es: <span id="correo"></span></p>
+	<script>
+		// Obtenemos la URL actual
+		var url_string = window.location.href;
+		var url = new URL(url_string);
+
+		// Obtenemos el valor del parámetro "correo"
+		var correo = url.searchParams.get("correo");
+
+		// Insertamos el valor del correo electrónico en el elemento span del párrafo
+		document.getElementById("correo").innerHTML = correo;
+	</script>
+    </div>
+
+    <div class="row">
+    <img src="images/rat.gif" class="img-fluid" alt="">
+    </div>
+
+    <div class="row">
+        <a class="btn btn-secondary" href="index.html" role="button">Regresa al Index</a>
+    </div>
+
+
+</div>
+
+
+
+
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
